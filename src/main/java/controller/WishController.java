@@ -19,7 +19,7 @@ public class WishController {
 	}
 	@RequestMapping(method=RequestMethod.GET, value="/welcome")
 	public String load() {
-		System.out.println("welcome page loaded");
+		System.out.println("welcome page loaded1");
 		return "welcome";
 	}
 }
