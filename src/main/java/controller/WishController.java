@@ -13,8 +13,8 @@ public class WishController {
 	@Autowired
 	WishService service;
 	@RequestMapping(method=RequestMethod.GET, value="/wish")
-	public String wish(Model model2) {
-		model2.addAttribute("wmsg", service.getResult());
+	public String wish(Model model3) {
+		model3.addAttribute("wmsg", service.getResult());
 		return "result";
 	}
 	@RequestMapping(method=RequestMethod.GET, value="/welcome")
